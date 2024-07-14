@@ -1,150 +1,193 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body{
-width: 100%;
-height: 100%;
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-family: "Nanum Gothic", sans-serif;
+  color: white;
 }
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
-section{
-    height: 100vh;
-    width: 95vw;
-}
-.logoLink{
-    text-decoration: none;
-    color: rgb(252, 0, 0);
-    /* padding: 0.5rem; */
-    margin-left: 2rem;
-    margin-top: 1rem;
-    display: flex;
-    font-family: "Nanum Gothic", sans-serif;
-    font-weight: 800;
-    font-size: 2rem;
-    /* height: 10%; */
 
+section {
+  width: 100%;
 }
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.logoimage{
-    border-radius: 0.25rem;
-}
-.sidenav{
-    position: fixed;
-    /* background-color: red; */
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    left: 25vw;
-    right: 25vw;
-    bottom: 2%;
-    /* margin: 0 auto; */
 
-    
+.logoLink {
+  text-decoration: none;
+  color: rgb(252, 0, 0);
+  margin-left: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
 }
-.navlist{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-direction: row;
-    gap: 1rem;
-    
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.navatt{
-    background-color: rgba(255, 255, 255, 0.134);
-    /* backdrop-filter: blur(20px); */
-    border-radius: 5px;
+
+.logoimage {
+  border-radius: 0.25rem;
 }
+
+.sidenav {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  bottom: 1%;
+  z-index: 1000; /* Ensure navbar is above other content */
+}
+
+.navlist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.navatt {
+  background-color: rgba(255, 255, 255, 0.134);
+  border-radius: 5px;
+}
+
 .navlist li {
-    padding: 0.5rem;
-    
+  padding: 0.5rem;
 }
 
-.navlist li:hover{
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.393);
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    
-    transition: 1s;
-
-}
-.navlist li:hover svg{
-    color: red;
-    transition: 1s;
-}
-svg{
-    width: 2.2rem;
-    color: white;   
-}
-.upper{
-    /* background-color: red; */
-    /* position: absolute; */
-    /* background-color: red; */
-    height: 45vh;
-    width: 95vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    /* margin: 2rem; */
-}
-.upperimage{
-    width: 270px;
-    height: 100%;
-    border-radius: 3rem;
-    padding: 2.5rem;
-}
-.intro{
-    /* position: absolute; */
-    
-    color: white;
-    font-size: xx-large;
-    font-family: "Nanum Gothic", sans-serif;
-    margin: 2rem;
-    /* height: 80vh; */
-}
-.name{
-    color: rgb(249, 0, 0);
+.navlist li:hover, .navlist li.active {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.393);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  transition: 1s;
 }
 
-.subhead{
-    font-size: 1.5rem;
-    margin-top: 0.7rem;
-}
-.details{
-    /* margin: 1rem; */
-    margin-top: 1rem;
-    margin-right: 1rem;
-    font-size: 1rem;
-    line-height: 25px;
-}
-.country{
-    color: red;
+.navlist li:hover i, .navlist li.active i {
+  color: red;
+  transition: 1s;
 }
 
+i {
+  display: block;
+  font-size: 1.7rem;
+  color: white;   
+}
 
+.upper {
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.upperimage {
+  width: 270px;
+  height: 100%;
+  border-radius: 3rem;
+  padding: 2.5rem;
+}
 
+.Intro {
+  color: white;
+  font-size: xx-large;
+  font-family: "Nanum Gothic", sans-serif;
+  margin: 2rem;
+}
 
+.subhead {
+  font-size: 1.5rem;
+  margin-top: 0.7rem;
+}
+
+.details {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  line-height: 25px;
+}
+
+.red {
+  color: red;
+}
+
+.about {
+  margin-bottom: 0.5rem;
+  font-weight: 900;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.underline {
+  width:7rem;
+  height: 2px;
+  background-color: red;
+}
+
+.underline2 {
+  width: 10.2rem;
+  height: 2px;
+  background-color: red;
+}
+
+.aboutpic {
+  height: 40%;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutpic img {
+  border-radius: 10px;
+}
+
+.intro {
+  margin: 2rem;
+  line-height: 30px;
+  font-size: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 0.35rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(254, 136, 136, 0.838);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: red;
+}
 
 @media (max-width: 767px) {
 
-
 }
+
 @media (min-width: 768px) and (max-width: 979px) {
 
 }
@@ -152,5 +195,3 @@ svg{
 @media (min-width: 1200px) {
 
 }
-  
-  
