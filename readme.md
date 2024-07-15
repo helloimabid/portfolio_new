@@ -2,6 +2,11 @@
 
 Welcome to my portfolio website repository! This project showcases my work, skills, and projects in web development.
 
+
+## Website Link
+
+(https://helloimabid.github.io/portfolio_new/)
+
 ## Features
 
 - **Responsive Design**: Adapts to various screen sizes for a seamless user experience.
@@ -29,4 +34,4 @@ Welcome to my portfolio website repository! This project showcases my work, skil
 
 ## Contact
 
-Feel free to reach out to me through the contact form on my website or connect with me on [LinkedIn](https://www.linkedin.com/in/sadman-abid-b0a473302/).
+Feel free to reach out to me through the contact form on my [website](https://helloimabid.github.io/portfolio_new/) or connect with me on [LinkedIn](https://www.linkedin.com/in/sadman-abid-b0a473302/).
